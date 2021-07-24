@@ -3,7 +3,7 @@ searchBtn = document.getElementById("button-addon1");
 
 <!--페이지 로딩되면 영화예매순위 업데이트-->
  $(document).ready(function () {
-
+    $('#searchResultBox').hide();
     });
 
 function bookingPage1() {
@@ -12,7 +12,12 @@ function bookingPage1() {
 
 function searchBtnClick() {
     let search = $('#search-form').val()
-    // console.log(search)
+    $('#searchResultText').empty();
+    $('#searchResultText').prepend(search);
+    $('#searchResultText').append("(으)로 검색한 결과입니다.");
+    $('#searchResultRow').empty();
+    $('#searchResultBox').show();
+
     $.ajax({
         type: "GET",
         url: "/search",
@@ -21,7 +26,7 @@ function searchBtnClick() {
             let json_search = JSON.parse(response['all_search_results']) //json string 형식을 json object 형식으로 변환
             let search_results = json_search['items'] //변환된 json 리스트에서 영화정보가 담긴 items만 지정
 
-            for (let i = 0; i < search_results.length; i++) {
+            for (let i = 0; i < 10; i++) {
                 let rawTitle = search_results[i]['title']
                 let title = rawTitle.replace(/(<([^>]+)>)/ig,"") //title에 붙어있는 태그들 제거
                 let img = search_results[i]['image']
@@ -29,8 +34,24 @@ function searchBtnClick() {
                 let rawDirector = search_results[i]['director']
                 let director = rawDirector.replace('|',"") //director에 붙어있는 |(bar) 제거
                 let rate = search_results[i]['userRating']
+                let link = search_results[i]['link']
 
-                let temp_html = ``
+                console.log(title, img, pubDate, director, rate)
+
+                let temp_html = `<li class="result-movie-card">
+                                    <tr class="image-box">
+                                    <a href="${link}" target="_blank">
+                                        <img class="movie-image"
+                                            src="${img}">
+                                            </a>
+                                    </tr>
+                                    <div class="movie-desc"><p class="movie-name"> ${title} (${pubDate})</p>
+                                        <span style="font-size: 13px"> ${director} / ★${rate} </span></div>
+                                </li>`
+
+                $('#searchResultRow').append(temp_html)
+
+
 
             }
         }
