@@ -1,11 +1,42 @@
+
 nav {
     width: 100%;
-    height: 80px;
+    height: 180px;
     background-color: black;
     border-bottom: solid 1px grey;
-    z-index: 3;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    padding-top: 20px;
+    z-index: 9999;
+}
+.logo_img{
+    margin: 0 auto;
+    display: block;
+    width: auto;
+}
+.menu ul{
+    width: 700px;
+    margin: 0 auto;
+    padding: 35px 0 0 0;
+    text-align: center;
+    overflow: hidden;
+
+}
+.menu ul li{
+    margin-right: 100px;
+}
+.menu ul li a{
+    display: block;
+    height: 40px;
+    padding: 10px 40px 10px 40px;
+    font-size: 15pt;
+    font-weight: bold;
+    color: white;
+}
+.menu ul li:last-child{
+    margin-right: 0;
+}
+.menu .mn_gnb>li:hover>a{
+    color: #e50000;
 
 }
 
@@ -35,12 +66,16 @@ nav {
 .menu .mn_gnb>li:hover>a{
     color: #e50000;
 }
+
+.carousel {
+    min-width: 1000px;
+}
 .carousel-caption {
     position: absolute;
     bottom: 10%;
     text-align: right;
-}
 
+}
 .main-movie-name {
     font-size: 30px;
     font-weight: bolder;
@@ -59,15 +94,21 @@ nav {
     text-shadow: 2px 2px 2px black;
 }
 
+.form {
+    width: 1000px;
+    min-width: 1000px;
+    margin: auto;
+    margin-bottom: 100px;
+}
 .p-1 {
     width: 500px;
-    margin: 30px auto 30px auto;
     border-radius: 15px;
+    margin: 50px auto 50px auto;
 }
 
 .search-resultbox {
     width: 80%;
-    height: 800px;
+    height: auto;
     background-color: black;
     margin: auto;
 }
@@ -82,10 +123,10 @@ nav {
 
 .container {
     max-width: 1500px;
+    min-width: 1000px;
     width: 100%;
     height: auto;
-    margin: 50px auto 0 auto;
-
+    margin: 50px auto 150px auto;
 }
 
 .row {
@@ -120,80 +161,114 @@ nav {
 .movie-name {
     font-weight: bolder;
 }
-.booking-rank {
-    color: white;
-    font-weight: bolder;
-    font-size: 20px;
-    margin-left: 11%;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-.container-fluid {
+.movie-recommendation {
     margin: auto;
-}
-
-.card-deck {
     width: 80%;
-    margin: 10px auto 50px auto;
-}
-
-
-.col {
-    padding: 0;
-    background-color: black;
-}
-
-.ranking-num {
-    position: absolute;
-    z-index: 2;
-    font-weight: bolder;
-    font-size: 30px;
     color: white;
-    text-shadow: 2px 2px 2px black;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    min-width: 1000px;
+    max-width: 1500px;
+}
+.recommendation-wrap {
+    margin: auto;
+    width: 80%;
+    min-width: 1000px;
+    max-width: 1500px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 0px;
+    margin-bottom: 50px;
+}
+
+.card:hover img{
+    transform: scale(1.2);
+    overflow: hidden;
 
 }
-.row-margin {
-    margin-bottom: 20px;
+.test {
+    display: inline-block;
+
 }
+
+.card-img {
+    height: 600px;
+    width: 100%;
+    object-fit: none;
+    object-position: right bottom;
+    transition: all 0.2s ease-in;
+}
+
+.card-img2 {
+    height: 600px;
+    width: 100%;
+    object-fit: cover; !important;
+    object-position: left top; !important;
+    transition: all 0.2s ease-in;
+
+}
+.card-title {
+    font-size: 50px;
+    color: white;
+}
+
+.card-text {
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+
 
 body {
     background-color: black;
 }
 
-footer{
+footer {
     border-top: grey 1px solid;
+    color: white;
 }
+
 .under_logo{
-    margin: 30px 0 0 50px;
+    margin: 30px;
     width: 300px;
-    height: 70px;
+    height: 80px;
 }
 .foot_txt{
     margin: 10px 0 0 4%;
     width: 90%;
     line-height: 20px;
-    font-size: 15px;
+    font-size: 14pt;
 }
 li {
     list-style-type: none;
     float: left;
 }
-
 .icons{
     display: flex;
-    width: 150px;
+    width: 200px;
     margin-top: 20px;
-    margin-left: 4%;
+    margin-left: 4px;
     justify-content: space-between;
+
+}
+
+
+.sns_icon li {
+    margin-right: 10px;
+}
+
+.fab, .far {
+    color: white;
 }
 
 .end{
     text-align: left;
     line-height: 20px;
-    padding: 20px 0 0 4%;
-    font-size: 13px;
+    padding: 20px 0 50px 4%;
+    font-size: 12pt;
 }
-.end p{
-    color: white;
+.end p a{
+    color: white !important;
 }
