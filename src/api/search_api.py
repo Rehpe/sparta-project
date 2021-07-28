@@ -29,7 +29,7 @@ def api_search(key_value):
     url = "https://openapi.naver.com/v1/search/movie" # json 결과
     # url = "https://openapi.naver.com/v1/search/movie.xml?query=" + encText # xml 결과
     query = "?query=" + encText
-    option = "&display=30&sort=sim"
+    option = "&display=50&sort=sim"
     url_query = url + query + option
 
     request = urllib.request.Request(url_query)
