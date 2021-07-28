@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // searchForm = document.getElementById("search-form");
 const searchBtn = document.getElementById("jsSearchButton");
 const searchInput = document.getElementById("jsSearchInput");
