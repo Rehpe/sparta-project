@@ -8,11 +8,13 @@ nav {
     padding-top: 20px;
     z-index: 9999;
 }
+
 .logo_img{
     margin: 0 auto;
     display: block;
     width: auto;
 }
+
 .menu ul{
     width: 700px;
     margin: 0 auto;
@@ -21,9 +23,11 @@ nav {
     overflow: hidden;
 
 }
+
 .menu ul li{
     margin-right: 100px;
 }
+
 .menu ul li a{
     display: block;
     height: 40px;
@@ -32,12 +36,13 @@ nav {
     font-weight: bold;
     color: white;
 }
+
 .menu ul li:last-child{
     margin-right: 0;
 }
+
 .menu .mn_gnb>li:hover>a{
     color: #e50000;
-
 }
 
 .logo_img{
@@ -46,6 +51,7 @@ nav {
     width: 15%;
     height: auto;
 }
+
 .menu ul{
     width: 1050px;
     margin: 0 auto;
@@ -53,9 +59,11 @@ nav {
     text-align: right;
     overflow: hidden;
 }
+
 .menu ul li{
     float: left;
 }
+
 .menu ul li a{
     display: block;
     padding: 10px 50px 10px 100px;
@@ -63,56 +71,67 @@ nav {
     font-weight: bold;
     color: white;
 }
+
 .menu .mn_gnb>li:hover>a{
     color: #e50000;
 }
+/*캐로셀*/
 
+/*캐로셀을 감싸는 제일 큰 컨테이너*/
 .carousel {
     min-width: 1000px;
 }
+/*캐로셀 내의 달린 모든 캡션*/
 .carousel-caption {
     position: absolute;
     bottom: 10%;
     text-align: right;
-
 }
+/*캐로셀 내의 영화 제목*/
 .main-movie-name {
     font-size: 30px;
     font-weight: bolder;
     margin-top: 10px;
     text-shadow: 2px 2px 2px black;
 }
-
+/*캐로셀 내의 영화 개봉일*/
 .main-movie-release-date {
     font-size: 20px;
     margin-top: 10px;
     text-shadow: 2px 2px 2px black;
 }
-
+/*캐로셀 내의 영화 설명*/
 .main-movie-description {
     margin-top: 10px;
     text-shadow: 2px 2px 2px black;
 }
 
+/*검색창*/
+
+/*검색창을 감싸고 있는 폼*/
 .form {
     width: 1000px;
     min-width: 1000px;
     margin: auto;
     margin-bottom: 100px;
 }
+/*검색창 (클래스 명 변경시 모양이 깨집니다)*/
 .p-1 {
     width: 500px;
     border-radius: 15px;
     margin: 50px auto 50px auto;
 }
 
+/*검색 결과창*/
+
+/*검색 결과에 관한 텍스트+영화가 붙을 제일 큰 컨테이너*/
 .search-resultbox {
     width: 80%;
     height: auto;
     background-color: black;
     margin: auto;
 }
-
+/*(으)로 검색한 결과입니다 텍스트*/
 .search-result-text {
     padding-top: 30px;
     text-align: center;
@@ -120,7 +139,7 @@ nav {
     font-weight: bold;
     color: white;
 }
-
+/*검색 결과 컨테이너*/
 .container {
     max-width: 1500px;
     min-width: 1000px;
@@ -128,47 +147,47 @@ nav {
     height: auto;
     margin: 100px auto 100px auto;
 }
-
+/*검색 결과가 행으로 붙을 수 있게 하는 row 클래스*/
 .row {
     width: 90%;
     margin: auto;
     grid-column-gap: 5%;
     grid-row-gap: 30px;
 }
-
+/*검색 결과 내 영화 카드*/
 .result-movie-card{
     width: 200px;
 }
-
+/*검색 결과 내 이미지 박스*/
 .image-box {
     display: inline-block;
     float: left;
     width: 100%;
 }
-
+/*검색 결과 내 이미지*/
 .movie-image {
     width: 200px;
     height: 280px;
     border-radius: 10px;
     margin: auto;
 }
-
+/*검색 결과 내 모든 텍스트*/
 .movie-desc {
     margin-top: 10px;
     color: white;
 }
-
+/*검색 결과 내의 영화명*/
 .movie-name {
     font-weight: bolder;
 }
-
+/*페이지 버튼이 붙을 박스*/
 .button-box {
     display: flex;
     width: 100%;
     margin-bottom: 100px;
     justify-content: center;
 }
-
+/*페이지 버튼*/
 .list-btn {
     display: flex;
     width:40px;
@@ -185,6 +204,9 @@ nav {
 
 }
 
+/*영화 추천*/
+
+/*오늘은 이런 영화 어때요? 텍스트*/
 .movie-recommendation {
     margin: auto;
     width: 80%;
@@ -195,6 +217,7 @@ nav {
     min-width: 1000px;
     max-width: 1500px;
 }
+/*영화 추천 박스*/
 .recommendation-wrap {
     margin: auto;
     width: 80%;
@@ -205,17 +228,12 @@ nav {
     border: 0px;
     margin-bottom: 50px;
 }
-
+/*이미지에 마우스오버시 호버링 애니메이션*/
 .card:hover img{
     transform: scale(1.2);
     overflow: hidden;
-
 }
-.test {
-    display: inline-block;
-
-}
-
+/*첫 번째 영화추천카드 이미지*/
 .card-img {
     height: 600px;
     width: 100%;
@@ -223,20 +241,20 @@ nav {
     object-position: right bottom;
     transition: all 0.2s ease-in;
 }
-
+/*두 번째 영화추천카드 이미지*/
 .card-img2 {
     height: 600px;
     width: 100%;
     object-fit: cover; !important;
     object-position: left top; !important;
     transition: all 0.2s ease-in;
-
 }
+/*영화추천카드 제목*/
 .card-title {
     font-size: 50px;
     color: white;
 }
-
+/*영화추천카드 내용*/
 .card-text {
     margin-top: 20px;
     font-size: 20px;
@@ -249,6 +267,7 @@ body {
     background-color: black;
 }
 
+/*푸터*/
 footer {
     border-top: grey 1px solid;
     color: white;
@@ -259,25 +278,26 @@ footer {
     width: 300px;
     height: 80px;
 }
+
 .foot_txt{
     margin: 10px 0 0 4%;
     width: 90%;
     line-height: 20px;
     font-size: 14pt;
 }
+
 li {
     list-style-type: none;
     float: left;
 }
+
 .icons{
     display: flex;
     width: 200px;
     margin-top: 20px;
     margin-left: 4px;
     justify-content: space-between;
-
 }
-
 
 .sns_icon li {
     margin-right: 10px;
@@ -293,6 +313,7 @@ li {
     padding: 20px 0 50px 4%;
     font-size: 12pt;
 }
+
 .end p a{
     color: white !important;
 }

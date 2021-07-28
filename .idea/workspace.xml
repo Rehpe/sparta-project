@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5c0508a-71be-4f6b-9a7e-0ec6e2047f43" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/search_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/search_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/static/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/style/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +177,7 @@
       <workItem from="1626961525424" duration="305000" />
       <workItem from="1626976845422" duration="92524000" />
       <workItem from="1627324729225" duration="33360000" />
-      <workItem from="1627470029812" duration="1990000" />
+      <workItem from="1627470029812" duration="2972000" />
     </task>
     <task id="LOCAL-00001" summary="영화 추천 컨텐츠 추가">
       <created>1627385814332</created>
@@ -188,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627385814332</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="검색결과 pagination 추가">
+      <created>1627472092069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627472092069</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +204,8 @@
       <path value="$PROJECT_DIR$/sparta-project" />
     </ignored-roots>
     <MESSAGE value="영화 추천 컨텐츠 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="영화 추천 컨텐츠 추가" />
+    <MESSAGE value="검색결과 pagination 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="검색결과 pagination 추가" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/teamproject$api_test.coverage" NAME="api_test Coverage Results" MODIFIED="1627033333044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
