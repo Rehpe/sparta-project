@@ -1,31 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-<<<<<<< HEAD
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- 페이지 아이콘 -->
-        <link rel="icon" href="{{ url_for('static', filename='img/film-solid.svg') }}">
-
-
-         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-              crossorigin="anonymous">
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script>
-
-=======
 
 <head>
     <!-- Required meta tags -->
@@ -57,7 +31,6 @@
 
         <!-- reset css -->
         <link rel="stylesheet" href="{{ url_for('static', filename='style/reset.css') }}">
->>>>>>> 6875ced (main page + Nav, Footer)
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -69,79 +42,6 @@
             <title>{{ title }}</title>
         {% endif %}
 
-
-        <!-- 자바스크립트 -->
-        <script defer src="{{ url_for('static', filename='js/index.js') }}"></script>
-        <script defer src="{{ url_for('static', filename='js/ranking.js') }}"></script>
-        <script defer src="{{ url_for('static', filename='js/shrinkNavBar.js') }}"></script>
-
-        <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css') }}">
-    </head>
-
-    <body>
-        <header>
-            <nav id="jsNavBar">
-                <div id="jsTopWrap" class="top_wrap">
-                    <a href="/">
-                        <img id="jsLogoImg" class="logo_img" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo">
-                    </a>
-                    <div class="menu">
-                        <ul class="mn_gnb">
-                            <li><a href="/upcoming">개봉예정작</a></li>
-                            <li><a href="/ranking">영화순위</a></li>
-                            <li><a href="/boardlist">게시판</a></li>
-                        </ul>
-                        <a class="login-trigger whiten-hover" href="#" data-target="#login" data-toggle="modal">Login</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <div id="login" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button data-dismiss="modal" class="close">&times;</button>
-                        <h4>Login</h4>
-                        <form>
-                            <input type="text" name="username" class="username form-control" placeholder="Username"/>
-                            <input type="password" name="password" class="password form-control" placeholder="password"/>
-                            <input class="btn login" type="submit" value="Login" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
         {% block content %}
         {% endblock %}
-
-        <footer>
-            <div class="footline_wrap">
-                <div class="under_logo">
-                    <a href="#"><img class="logo_img" src="../static/img/logo.png" alt="logo"></a>
-                </div>
-                <div class="foot_txt">
-                    <p>상호명 : WHICH MOVIE &nbsp; 사업장소재지 : 서울특별시 강남구 선릉로 영화빌딩 &nbsp; 팩스 : 070-0000-0000
-                        &nbsp; 사업자등록번호 : 000-00-00000 <br>고객센터 : 1234-5678 &nbsp; 상담시간 00:00-24:00 / OFF-TIME 12:00-13:00
-                        (공휴일 휴무)
-                        이메일 : HELLO@WHICHMOVIE.CO.KR <br>대표이사 : 이oo 개인정보책임자 : 이oo <br>
-                        WHICH MOVIE 에서 중계되는 모든 상품은 각 업체에서 책임을 지고 있습니다.
-                    </p>
-                    <div class="icons">
-                        <ul class="sns_icon">
-                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-3x"></i></a></li>
-                            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-3x"></i></a></li>
-                            <li><a href="https://www.youtube.com/"><i class="fab fa-youtube-square fa-3x"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="end">
-                    <p><a href="#">개인정보처리방침</a>&nbsp;|&nbsp;<a href="#">이용약관</a>
-                        &nbsp;|&nbsp;<a href="#">채용정보</a>&nbsp;|&nbsp;<a href="#">전자우편수집거부</a></p>
-                    <p>COPYRIGHT 2021. WHICH MOVIE ALL RIGHTS RESERVED.</p>
-                </div>
-            </div>
-        </footer>
-    </body>
 </html>
